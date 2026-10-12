@@ -446,3 +446,219 @@ strong {
 .site-footer p {
   margin: 0;
 }
+
+/* Landing page (index.html, index-tr.html): always dark, screenshot-led */
+body.landing,
+body.dark {
+  --paper: #0b0b10;
+  --ink: #eafdff;
+  --muted: #b3c4c7;
+  --accent: #01f3ff;
+  --panel: #1c1c1d;
+  --rule: #2a2d2e;
+  color-scheme: dark;
+  background:
+    radial-gradient(60rem 28rem at 12% -6rem, rgb(1 243 255 / 0.2), transparent 70%),
+    radial-gradient(54rem 26rem at 95% 2rem, rgb(223 0 235 / 0.2), transparent 70%),
+    var(--paper);
+  background-repeat: no-repeat;
+}
+
+.landing .wide,
+.dark .wide {
+  max-width: 68rem;
+}
+
+.landing h1 {
+  font-size: clamp(2.5rem, 8vw, 4.25rem);
+  line-height: 1.05;
+  margin: 0 0 1rem;
+}
+
+.landing .hero {
+  display: grid;
+  align-items: center;
+  gap: 2rem;
+  padding-top: 2rem;
+}
+
+.landing .lede {
+  font-size: 1.35rem;
+  margin: 0 0 0.75rem;
+}
+
+.landing .audience {
+  color: var(--muted);
+  font-size: 1.05rem;
+  margin: 0 0 1.75rem;
+}
+
+.store-soon {
+  display: inline-block;
+  margin: 0;
+  padding: 0.75rem 1.5rem;
+  border: 1px solid var(--accent);
+  border-radius: 999px;
+  font-weight: 620;
+  font-size: 1.05rem;
+}
+
+/* Phone screenshots sit on a soft coloured glow */
+.visual {
+  --glow: 1 243 255;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  isolation: isolate;
+}
+
+.visual::before {
+  content: "";
+  position: absolute;
+  inset: 8% -6% 4%;
+  z-index: -1;
+  background:
+    radial-gradient(closest-side, rgb(var(--glow) / 0.42), transparent 100%),
+    radial-gradient(closest-side at 70% 30%, rgb(var(--glow2, 223 0 235) / 0.3), transparent 100%);
+  filter: blur(28px);
+}
+
+.visual.magenta { --glow: 223 0 235; --glow2: 1 243 255; }
+.visual.blue { --glow: 40 90 255; --glow2: 223 0 235; }
+.visual.violet { --glow: 140 60 255; --glow2: 1 243 255; }
+
+.visual img {
+  display: block;
+  width: min(62%, 17rem);
+  height: auto;
+  filter: drop-shadow(0 18px 30px rgb(0 0 0 / 0.55));
+}
+
+.visual.single img {
+  width: min(78%, 19rem);
+}
+
+.visual.duo img + img {
+  margin-left: -12%;
+  margin-top: 3rem;
+}
+
+.landing .feature {
+  display: grid;
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: 5.5rem;
+}
+
+.landing .feature h2 {
+  font-size: clamp(1.9rem, 5vw, 2.6rem);
+  line-height: 1.1;
+  margin: 0 0 0.75rem;
+}
+
+.landing .feature p,
+.landing .pair p {
+  color: var(--muted);
+  font-size: 1.15rem;
+  margin: 0 0 0.75rem;
+}
+
+.landing .pair {
+  display: grid;
+  gap: 4rem 2rem;
+  margin-top: 6rem;
+}
+
+.landing .pair article {
+  display: grid;
+  gap: 1.5rem;
+  justify-items: center;
+  text-align: center;
+}
+
+.landing .pair h2 {
+  font-size: 1.8rem;
+  margin: 0 0 0.5rem;
+}
+
+.landing .private {
+  margin-top: 6rem;
+}
+
+.landing .private h2 {
+  font-size: clamp(1.9rem, 5vw, 2.6rem);
+  margin: 0 0 1rem;
+}
+
+.landing .private ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 0.75rem 2.5rem;
+  font-size: 1.15rem;
+  color: var(--muted);
+}
+
+.landing .private li {
+  margin: 0;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.landing .private li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.7em;
+  width: 0.6rem;
+  height: 0.6rem;
+  border-radius: 50%;
+  background: var(--accent);
+}
+
+.landing .everyone {
+  margin: 6rem auto 0;
+  max-width: var(--measure);
+  padding: 0 1rem;
+  text-align: center;
+}
+
+.landing .everyone h2 {
+  font-size: clamp(1.9rem, 5vw, 2.6rem);
+  margin: 0 0 0.5rem;
+}
+
+.landing .everyone p {
+  color: var(--muted);
+  font-size: 1.15rem;
+}
+
+.landing .site-footer a:hover,
+.dark .site-footer a:hover {
+  color: var(--ink);
+}
+
+@media (min-width: 48rem) {
+  .landing .hero {
+    grid-template-columns: 1.1fr 1fr;
+    padding-top: 3rem;
+  }
+
+  .landing .feature {
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+  }
+
+  .landing .feature.flip .visual {
+    order: -1;
+  }
+
+  .landing .pair {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .landing .private ul {
+    grid-template-columns: 1fr 1fr;
+  }
+}
