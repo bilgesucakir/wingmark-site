@@ -3,8 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Wingmark · Kuş gözlemlerin haritanda</title>
-  <meta name="description" content="Wingmark, gördüğün kuşları kendi özel haritanda kaydettiğin bir iPhone uygulamasıdır.">
+  <title>Wingmark · Kişisel kuş günlüğün</title>
+  <meta name="description" content="Wingmark, iPhone için özel bir kuş günlüğü: gözlemlerini kaydet, haritaya işle, türleri öğren ve çağrılarını dinle.">
+  <meta name="theme-color" content="#0b0b10">
   <link rel="icon" href="favicon.png" type="image/png">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <link rel="preload" href="fonts/literata-latin.woff2" as="font" type="font/woff2" crossorigin>
@@ -12,10 +13,10 @@
   <link rel="alternate" hreflang="en" href="https://wingmarkapp.com/">
   <link rel="alternate" hreflang="tr" href="https://wingmarkapp.com/index-tr">
 </head>
-<body>
+<body class="landing">
   <header class="site-header">
     <div class="wide">
-      <a class="brand" href="/index-tr"><picture><source srcset="img/bird-cyan.png" media="(prefers-color-scheme: dark)"><img src="img/bird-black.png" alt="" width="40" height="28"></picture>Wingmark</a>
+      <a class="brand" href="/index-tr"><img src="img/bird-cyan.png" alt="" width="40" height="28">Wingmark</a>
       <div class="header-end">
         <nav class="site-nav" aria-label="Ana menü">
           <a href="/privacy-tr">Gizlilik</a>
@@ -30,72 +31,102 @@
   </header>
 
   <main>
-    <div class="column">
-      <h1>Gördüğün her kuş, kendi haritanda.</h1>
-      <p class="lede">Wingmark, gördüğün kuşların kaydını tutman için bir iPhone uygulaması: ne olduğu, nerede, ne zaman ve şansın yaver gittiyse bir fotoğraf.</p>
-    </div>
+    <section class="wide hero">
+      <div>
+        <h1>Kişisel kuş günlüğün</h1>
+        <p class="lede">Gördüğün kuşları kaydet, türleri öğren, çağrılarını duy.</p>
+        <p class="audience">Yıllardır kuş izliyor da olsan, pencerenin dışındakileri yeni fark etmeye başlamış da olsan.</p>
+        <p class="store-soon">Yakında App Store’da</p>
+      </div>
+      <div class="visual single"><img src="img/phones/map-tr.webp" alt="Her gözlemin fotoğrafıyla işaretlendiği harita" width="760" height="1566"></div>
+    </section>
 
-    <div class="wide">
-      <figure class="field" aria-label="Örnek: açık bir kaydın olduğu gözlem haritası">
-        <svg viewBox="0 0 800 420" role="img" aria-hidden="true" focusable="false">
-          <path class="water" d="M-10 330 C 90 300 160 350 250 320 S 400 250 470 280 S 640 360 810 300"/>
-          <g class="contour">
-            <path d="M470 90 C 540 50 660 60 690 120 C 720 180 650 240 560 230 C 480 222 420 160 470 90 Z"/>
-            <path d="M500 105 C 555 78 640 88 660 128 C 680 172 628 210 565 204 C 505 198 462 150 500 105 Z"/>
-            <path d="M530 122 C 568 105 620 112 632 138 C 644 166 610 188 570 184 C 532 180 506 148 530 122 Z"/>
-            <path d="M560 138 C 580 130 604 134 608 148 C 612 162 594 170 576 168 C 558 166 546 150 560 138 Z"/>
-            <path d="M90 120 C 150 70 270 80 300 150 C 330 220 240 260 160 240 C 80 220 40 170 90 120 Z"/>
-            <path d="M125 135 C 170 102 250 110 268 158 C 286 206 225 228 168 216 C 112 204 88 166 125 135 Z"/>
-            <path d="M160 150 C 190 132 236 138 244 164 C 252 190 216 202 182 196 C 150 190 136 166 160 150 Z"/>
-            <path d="M330 30 C 380 10 450 20 440 60 C 432 92 370 96 340 80 C 310 64 300 42 330 30 Z"/>
-            <path d="M720 250 C 760 236 800 250 810 270 L 810 380 C 770 390 700 360 690 320 C 682 288 690 262 720 250 Z"/>
-          </g>
-          <g>
-            <path class="pin" transform="translate(212 176)" d="M0 0 C -5 -8 -9 -12 -9 -18 A 9 9 0 1 1 9 -18 C 9 -12 5 -8 0 0 Z"/>
-            <path class="pin" transform="translate(300 300)" d="M0 0 C -5 -8 -9 -12 -9 -18 A 9 9 0 1 1 9 -18 C 9 -12 5 -8 0 0 Z"/>
-            <path class="pin" transform="translate(395 72)" d="M0 0 C -5 -8 -9 -12 -9 -18 A 9 9 0 1 1 9 -18 C 9 -12 5 -8 0 0 Z"/>
-            <path class="pin" transform="translate(655 214)" d="M0 0 C -5 -8 -9 -12 -9 -18 A 9 9 0 1 1 9 -18 C 9 -12 5 -8 0 0 Z"/>
-            <path class="pin" transform="translate(735 320)" d="M0 0 C -5 -8 -9 -12 -9 -18 A 9 9 0 1 1 9 -18 C 9 -12 5 -8 0 0 Z"/>
-            <path class="pin" transform="translate(520 296)" d="M0 0 C -5 -8 -9 -12 -9 -18 A 9 9 0 1 1 9 -18 C 9 -12 5 -8 0 0 Z"/>
-          </g>
-          <g transform="translate(580 160)">
-            <g class="pin-drop">
-              <path class="pin-selected" d="M0 0 C -8 -12 -15 -19 -15 -29 A 15 15 0 1 1 15 -29 C 15 -19 8 -12 0 0 Z"/>
-              <circle class="pin-dot" cx="0" cy="-29" r="5.5"/>
-            </g>
-          </g>
-        </svg>
-        <figcaption class="entry">
-          <h2>Mavi baştankara</h2>
-          <p class="latin">Cyanistes caeruleus</p>
-          <p>3 Mayıs 2026, 07:42’de görüldü</p>
-          <p>Yıldız Parkı, İstanbul</p>
-          <p>Yetişkin, kesin tanı</p>
-          <p class="note">İki tane, çınar ağaçlarının tepesinde besleniyorlardı.</p>
-        </figcaption>
-      </figure>
-    </div>
+    <section class="wide feature">
+      <div>
+        <h2>Birkaç dokunuşla kaydet</h2>
+        <p>Kuşu, tarihi, yeri, bir not ve fotoğrafı ekle. Erkek mi dişi mi, yavru mu yetişkin mi, evcil mi, onu da işaretle.</p>
+        <p>Ne gördüğünden emin değil misin? Tahmin olarak kaydet ya da türü henüz bilmediğini belirt.</p>
+      </div>
+      <div class="visual magenta single"><img src="img/phones/add-tr.webp" alt="Fotoğraf, tür ve ayrıntılarla yeni gözlem formu" width="760" height="1566" loading="lazy"></div>
+    </section>
 
-    <div class="column features">
-      <h2>Saniyeler içinde gözlem kaydet</h2>
-      <p>Bir fotoğraf çek ya da seç; Wingmark yeri ve zamanı ondan doldurur. Türü biliyorsan ekle, bilmiyorsan tanımsız olarak kaydet ve sonra dön.</p>
+    <section class="wide feature flip">
+      <div>
+        <h2>Nerede gördüğünü hatırla</h2>
+        <p>Her gözlem fotoğrafıyla haritada duruyor. Bir kümeye dokununca o noktada gördüğün kuşlar açılır.</p>
+        <p>Haritayı tanımlamaya, cinsiyete ve yaş evresine göre süzerek aradığını bul.</p>
+      </div>
+      <div class="visual blue single"><img src="img/phones/cluster-tr.webp" alt="Haritada bir kümeye dokununca oradaki gözlemler listelenir" width="760" height="1566" loading="lazy"></div>
+    </section>
 
-      <h2>Kuşlara göz at</h2>
-      <p>Yerleşik rehberde her tür için fotoğraflar, açıklamalar, yaşam alanı ve beslenme bilgisi ile ötüşlerinin ve seslerinin kayıtları var.</p>
+    <section class="wide feature">
+      <div>
+        <h2>Türleri tanı</h2>
+        <p>Yerleşik rehberde 570’ten fazla tür var. Takım ve familyaya göre daralt ya da İngilizce veya Türkçe ara.</p>
+        <p>Her kuş için fotoğraflar, boyut, beslenme, yaşam alanı ve ne kadar nadir olduğu bulunur.</p>
+      </div>
+      <div class="visual violet duo"><img src="img/phones/guide-tr.webp" alt="Takım ve familyaya göre daraltılmış tür rehberi" width="760" height="1566" loading="lazy"><img src="img/phones/species-tr.webp" alt="Fotoğraf, familya ve takım bilgisi olan bir tür sayfası" width="760" height="1566" loading="lazy"></div>
+    </section>
 
-      <h2>Rozet kazan</h2>
-      <p>Gözlem ve tür listen büyüdükçe rozetler, ulaştığın dönüm noktalarını gösterir.</p>
+    <section class="wide feature flip">
+      <div>
+        <h2>Kuşu sesinden tanı</h2>
+        <p>xeno-canto’dan gerçek saha kayıtlarıyla çağrıları ve ötüşleri her tür sayfasında dinle.</p>
+        <p>Bir dahaki sefere ağaçlarda bir ses duyduğunda nereden başlayacağını bileceksin.</p>
+      </div>
+      <div class="visual magenta single"><img src="img/phones/sounds-tr.webp" alt="Çalınabilir kayıtların olduğu bir tür sayfası" width="760" height="1566" loading="lazy"></div>
+    </section>
 
-      <h2>Sadece senin kalsın</h2>
-      <p>Gözlemlerini yalnızca sen görürsün. Reklam ve takip yok. Wingmark İngilizce ve Türkçe olarak kullanılabilir.</p>
+    <section class="wide feature">
+      <div>
+        <h2>Düzenli bir günlük</h2>
+        <p>Tüm gözlemlerin tek listede; her biri fotoğrafı, tarihi, yeri ve notlarıyla.</p>
+        <p>Bir kaydı açıp yeniden okuyabilir, düzenleyebilir ya da hemen yenisini ekleyebilirsin.</p>
+      </div>
+      <div class="visual blue single"><img src="img/phones/diary-tr.webp" alt="Fotoğraflı gözlemlerin listelendiği günlük" width="760" height="1566" loading="lazy"></div>
+    </section>
 
-      <p class="status"><strong>Yakında App Store’da.</strong></p>
-    </div>
+    <section class="wide pair">
+      <article>
+        <div class="visual violet single"><img src="img/phones/badges-tr.webp" alt="Kazanılan rozetleri gösteren ekran" width="760" height="1566" loading="lazy"></div>
+        <div>
+          <h2>Rozet topla</h2>
+          <p>Gözlem ve tür sayın arttıkça dönüm noktalarını topla. Bazıları gizli.</p>
+        </div>
+      </article>
+      <article>
+        <div class="visual blue single"><img src="img/phones/widget-tr.webp" alt="Ana Ekran’da Günün Kuşu widget’ı" width="760" height="1566" loading="lazy"></div>
+        <div>
+          <h2>Ana Ekran’da Wingmark</h2>
+          <p>Her gün rehberden yeni bir Günün Kuşu. Widget’lar son gözlemini ve kazanmaya en yakın olduğun rozeti de gösterir.</p>
+        </div>
+      </article>
+    </section>
+
+    <section class="wide private">
+      <h2>Sadece senin</h2>
+      <ul>
+        <li>Gözlemlerini, notlarını ve fotoğraflarını yalnızca sen görürsün.</li>
+        <li>Reklam yok, takip yok.</li>
+        <li>Verilerini indirebilir ya da hesabını istediğin zaman Ayarlar’dan silebilirsin.</li>
+        <li>İngilizce ve Türkçe kullanılabilir.</li>
+      </ul>
+    </section>
+
+    <section class="everyone">
+      <h2>Kuşları sevenlerin hepsi için</h2>
+      <p>İstanbul’da tek bir geliştirici tarafından yapıldı. Soru ya da fikir? Aşağıdaki adrese yaz.</p>
+    </section>
   </main>
 
   <footer class="site-footer">
     <div class="wide">
-      <p>© 2026 Bilgesu Çakır</p>
+      <p>© 2026 Bilgesu Çakır · <a href="mailto:support@wingmarkapp.com">support@wingmarkapp.com</a></p>
+      <nav aria-label="Alt bilgi">
+        <a href="/privacy-tr">Gizlilik</a>
+        <a href="/support-tr">Destek</a>
+        <a href="/accessibility-tr">Erişilebilirlik</a>
+      </nav>
     </div>
   </footer>
 </body>
