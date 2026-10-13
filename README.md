@@ -1,5 +1,7 @@
 # Wingmark site
 
+[![Website](https://img.shields.io/website?url=https%3A%2F%2Fwingmarkapp.com&label=wingmarkapp.com&up_message=online&down_message=down)](https://wingmarkapp.com)
+
 Public website for the Wingmark iOS app, hosted on Cloudflare at
 https://wingmarkapp.com/
 
