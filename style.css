@@ -616,19 +616,6 @@ body.dark {
 
 .landing .private li {
   margin: 0;
-  padding-left: 1.5rem;
-  position: relative;
-}
-
-.landing .private li::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0.7em;
-  width: 0.6rem;
-  height: 0.6rem;
-  border-radius: 50%;
-  background: var(--accent);
 }
 
 .landing .everyone {
