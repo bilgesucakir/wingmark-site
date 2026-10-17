@@ -582,14 +582,17 @@ body.dark {
 }
 
 .landing .private {
-  margin: 6rem auto 0;
-  max-width: 34rem;
+  margin-top: 6rem;
+}
+
+.landing .private ul,
+.landing .everyone p {
+  max-width: 40rem;
 }
 
 .landing .private h2 {
   font-size: clamp(1.9rem, 5vw, 2.6rem);
   margin: 0 0 1.25rem;
-  text-align: center;
 }
 
 .landing .private ul {
@@ -621,10 +624,8 @@ body.dark {
 
 .landing .everyone {
   margin: 6rem auto 0;
-  max-width: 44rem;
+  max-width: 68rem;
   padding: 0 1rem;
-  text-align: center;
-  text-wrap: balance;
 }
 
 .landing .everyone h2 {
