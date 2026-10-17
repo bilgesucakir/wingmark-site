@@ -594,7 +594,7 @@ body.dark {
   max-width: none;
 }
 
-.landing .private p,
+.landing .private ul,
 .landing .everyone p {
   max-width: 40rem;
 }
@@ -602,6 +602,20 @@ body.dark {
 .landing .private h2 {
   font-size: clamp(1.9rem, 5vw, 2.6rem);
   margin: 0 0 1.25rem;
+}
+
+.landing .private ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 0.9rem;
+  font-size: 1.15rem;
+  color: var(--muted);
+}
+
+.landing .private li {
+  margin: 0;
 }
 
 .landing .everyone {
@@ -615,7 +629,6 @@ body.dark {
   margin: 0 0 0.5rem;
 }
 
-.landing .private p,
 .landing .everyone p {
   color: var(--muted);
   font-size: 1.15rem;
