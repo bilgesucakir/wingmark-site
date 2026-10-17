@@ -581,8 +581,17 @@ body.dark {
   margin: 0 0 0.5rem;
 }
 
-.landing .private {
+.landing .closing {
+  display: grid;
+  gap: 4rem;
   margin-top: 6rem;
+}
+
+.landing .closing .private,
+.landing .closing .everyone {
+  margin: 0;
+  padding: 0;
+  max-width: none;
 }
 
 .landing .private ul,
@@ -660,5 +669,11 @@ body.dark {
 
   .landing .pair {
     grid-template-columns: 1fr 1fr;
+  }
+
+  .landing .closing {
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: start;
   }
 }
