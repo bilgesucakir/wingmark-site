@@ -493,14 +493,21 @@ body.dark {
   margin: 0 0 1.75rem;
 }
 
-.store-soon {
+.store-badge {
   display: inline-block;
-  margin: 0;
-  padding: 0.75rem 1.5rem;
-  border: 1px solid var(--accent);
-  border-radius: 999px;
-  font-weight: 620;
-  font-size: 1.05rem;
+  line-height: 0;
+  border-radius: 9px;
+}
+
+.store-badge svg {
+  display: block;
+  height: 54px;
+  width: auto;
+}
+
+.store-badge:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
 }
 
 /* Phone screenshots sit on a soft coloured glow */
