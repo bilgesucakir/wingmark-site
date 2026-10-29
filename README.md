@@ -1,5 +1,9 @@
 # Wingmark site
 
+<p>
+  <a href="https://apps.apple.com/us/app/wingmark-birdwatching-diary/id6820532421"><img src="assets/app-store-badge.png" width="160" alt="Download on the App Store"></a>
+</p>
+
 [![Website](https://img.shields.io/website?url=https%3A%2F%2Fwingmarkapp.com&label=wingmarkapp.com&up_message=online&down_message=down)](https://wingmarkapp.com)
 
 Public website for the [Wingmark iOS app](https://github.com/bilgesucakir/wingmark-ios), hosted on Cloudflare at https://wingmarkapp.com/
